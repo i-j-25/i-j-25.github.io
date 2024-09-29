@@ -1,0 +1,143 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+}
+
+.navbar-item {
+    color: #6F3455;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: "OpenSans-Bold";
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 80rem;
+    width: 100%;
+    background-image: url("images/hero-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+
+.hero .ij {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+}
+
+.hero .welcome {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 15%;
+}
+
+.hero .date {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 15%;
+}
+
+.section {
+    font-family: "Walbaum-Light";
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.section-ornament.left {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    background-image: url("images/floral-left.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-ornament.right {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    background-image: url("images/floral-right.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-content {
+    z-index: 10;
+    padding: 4rem;
+    display: flex;
+}
+
+.section-content img {
+    display: block;
+}
+
+.section-content-text {
+    font-size: 2rem;
+    max-width: 800px;
+    margin-right: 6rem;
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+    width: 100%;
+}
+
+#countdown-timer div {
+    background-color: #E9E9E9;
+    height: 4rem;
+    width: 25%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.section-content img {
+    
+}
+
+@font-face {
+    font-family: 'Walbaum-Light';
+    src:  url('fonts/Walbaum60ptLight.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src:  url('fonts/OpenSans_Condensed-Bold.ttf') format('truetype'),
+}
