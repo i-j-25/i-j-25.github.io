@@ -28,30 +28,24 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 6rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-@media (max-width: 900px) {
-    .navbar {
-        justify-content: flex-start;
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .navbar-item {
     color: #6F3455;
     font-size: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 4rem;
     font-family: "OpenSans-Bold";
     cursor: pointer;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-item img {
-    height: 20px;
-    width: 30px;
+    height: 2rem;
+    width: 3rem;
 }
 
 .hero {
@@ -138,15 +132,6 @@ body {
     padding: 4rem;
 }
 
-@media (max-width: 900px) {
-    .section-content {
-        flex-wrap: wrap;
-    }
-    .section-content img {
-        margin-top: 4rem;
-    }
-}
-
 .section-content-text {
     font-size: 2rem;
     margin-right: 6rem;
@@ -168,14 +153,42 @@ body {
 
 #countdown-timer div {
     background-color: #E9E9E9;
-    height: 4rem;
+    padding: 1rem;
     width: 25%;
-    margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+    .navbar-item {
+        font-size: 4rem;
+    }
+    .navbar-item img {
+        height: 3rem;
+        width: 5rem;
+    }
+    .section-content {
+        flex-wrap: wrap;
+    }
+    .section-content img {
+        margin-top: 4rem;
+        height: auto;
+        width: 100%;
+    }
+    .section-content-text {
+        font-size: 4rem;
+        margin-right: 0;
+    }
+    #countdown-timer {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
 }
 
 @font-face {
