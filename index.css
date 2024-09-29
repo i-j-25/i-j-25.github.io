@@ -1,5 +1,20 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #6F3455;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+a:hover {
+    color: #a35e85;
 }
 
 body {
@@ -14,6 +29,14 @@ body {
     align-items: center;
     width: 100%;
     height: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        justify-content: flex-start;
+    }
 }
 
 .navbar-item {
@@ -23,46 +46,63 @@ body {
     margin-right: 2rem;
     font-family: "OpenSans-Bold";
     cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navbar-item img {
+    height: 20px;
+    width: 30px;
 }
 
 .hero {
     position: relative;
     height: 80rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     background-image: url("images/hero-image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;   
 }
 
-.hero .ij {
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    width: 50%;
+.hero .welcome {
+    display: flex;
+    width: 100%
 }
 
-.hero .welcome {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 15%;
+.hero .welcome img {
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+
+.hero .ij {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%
+}
+
+.hero .ij img {
+    margin: 10rem;
 }
 
 .hero .date {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+
+.hero .date img {
+    margin-right: 10rem;
+    margin-bottom: 5rem;
 }
 
 .section {
     font-family: "Walbaum-Light";
     width: 100%;
     display: flex;
-    justify-content: center;
     position: relative;
-    flex-wrap: wrap;
 }
 
 .section-ornament.left {
@@ -71,7 +111,7 @@ body {
     left: 0;
     top: 0;
     height: 100%;
-    width: 20%;
+    width: 10%;
     background-image: url("images/floral-left.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,7 +124,7 @@ body {
     right: 0;
     top: 0;
     height: 100%;
-    width: 20%;
+    width: 10%;
     background-image: url("images/floral-right.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,24 +133,34 @@ body {
 
 .section-content {
     z-index: 10;
-    padding: 4rem;
     display: flex;
+    width: 100%;
+    padding: 4rem;
 }
 
-.section-content img {
-    display: block;
+@media (max-width: 900px) {
+    .section-content {
+        flex-wrap: wrap;
+    }
+    .section-content img {
+        margin-top: 4rem;
+    }
 }
 
 .section-content-text {
     font-size: 2rem;
-    max-width: 800px;
     margin-right: 6rem;
+    flex-grow: 1;
+}
+
+.section-content img {
+    height: 40rem;
 }
 
 #countdown-timer {
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 4rem;
     font-size: 2rem;
     display: flex;
     width: 100%;
@@ -126,10 +176,6 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-}
-
-.section-content img {
-    
 }
 
 @font-face {
