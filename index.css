@@ -3,7 +3,7 @@ html {
 }
 
 a {
-    color: #6F3455;
+    color: #6f3455;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -25,19 +25,31 @@ body {
     width: 100%;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    height: 5vh;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 2vh;
+    margin-left: 2vh;
 }
 
 .navbar-item {
-    color: #6F3455;
+    color: #6f3455;
     font-size: 2vh;
-    margin-left: 4vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
     font-family: "OpenSans-Bold";
     cursor: pointer;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     text-align: center;
-    max-width: 25%;
+    max-width: 20%;
+    text-wrap: wrap;
 }
 
 .navbar-item img {
@@ -83,7 +95,7 @@ body {
 .hero .date {
     display: flex;
     justify-content: flex-end;
-    width: 100%
+    width: 100%;
 }
 
 .hero .date img {
@@ -106,7 +118,7 @@ body {
     left: 0;
     top: 0;
     height: 100%;
-    width: 10%;
+    width: 15%;
     background-image: url("images/floral-left.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,7 +131,7 @@ body {
     right: 0;
     top: 0;
     height: 100%;
-    width: 10%;
+    width: 15%;
     background-image: url("images/floral-right.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -151,14 +163,16 @@ body {
 }
 
 #countdown-timer div {
-    background-color: #E9E9E9;
+    background-color: #6c495d;
+    color: white;
+    font-weight: bold;
     padding: 1vh;
     width: 25%;
     margin-right: 1vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1vh;
+    border-radius: 10vh;
 }
 
 h2 {
@@ -174,12 +188,10 @@ p {
 }
 
 @media (max-width: 1000px) {
-    .navbar {
-        justify-content: center;
-    }
     .navbar-item {
         font-size: 1.5vh;
         margin-left: 2vh;
+        margin-right: 2vh;
     }
     .navbar-item img {
         height: 2vh;
@@ -199,6 +211,7 @@ p {
     }
     #countdown-timer {
         margin-bottom: 0;
+        font-size: 2vh;
     }
     .hero .welcome img {
         margin-top: 2vh;
@@ -210,14 +223,23 @@ p {
         margin-bottom: 2vh;
         height: 5vh;
     }
+    .section-ornament.left {
+        width: 40%;
+    }
+    .section-ornament.right {
+        width: 40%;
+    }
+    #countdown-timer-seconds {
+        margin-right: 0 !important;
+    }
 }
 
 @font-face {
-    font-family: 'Walbaum-Light';
-    src:  url('fonts/Walbaum60ptLight.ttf') format('truetype'),
+    font-family: "Walbaum-Light";
+    src: url("fonts/Walbaum60ptLight.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'OpenSans-Bold';
-    src:  url('fonts/OpenSans_Condensed-Bold.ttf') format('truetype'),
+    font-family: "OpenSans-Bold";
+    src: url("fonts/OpenSans_Condensed-Bold.ttf") format("truetype");
 }
