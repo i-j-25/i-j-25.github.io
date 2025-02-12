@@ -163,8 +163,8 @@ body {
 }
 
 #countdown-timer div {
-    background-color: #6c495d;
-    color: white;
+    background-color: rgba(111, 52, 85, 0.25);
+    color: #6f3455;
     font-weight: bold;
     padding: 1vh;
     width: 25%;
@@ -185,6 +185,14 @@ h3 {
 
 p {
     font-size: 3vh;
+}
+
+.osa-iframe {
+    min-height: 1600px !important;
+    min-width: 396px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin-left: -2vh !important;
 }
 
 @media (max-width: 1000px) {

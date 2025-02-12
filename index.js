@@ -18,16 +18,17 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("countdown-timer-days").innerHTML = days + "d";
-    document.getElementById("countdown-timer-hours").innerHTML = hours + "h";
+    document.getElementById("countdown-timer-days").innerHTML = days + " d";
+    document.getElementById("countdown-timer-hours").innerHTML = hours + " h";
     document.getElementById("countdown-timer-minutes").innerHTML =
-        minutes + "m";
+        minutes + " m";
     document.getElementById("countdown-timer-seconds").innerHTML =
-        seconds + "s";
+        seconds + " s";
 
     // If the countdown is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+        document.getElementById("countdown-timer").innerHTML =
+            "Tack till alla som kom!";
     }
 }, 1000);
