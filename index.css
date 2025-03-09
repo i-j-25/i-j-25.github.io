@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
 }
 
 a {
@@ -7,6 +8,10 @@ a {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+}
+
+p {
+    max-width: 1226px;
 }
 
 a:hover {
@@ -26,6 +31,9 @@ body {
     padding-top: 1vh;
     padding-bottom: 1vh;
     height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .navbar-items {
@@ -112,46 +120,34 @@ body {
     overflow-x: hidden;
 }
 
-.section-ornament.left {
-    z-index: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 15%;
-    background-image: url("images/floral-left.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.section-ornament.right {
-    z-index: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 15%;
-    background-image: url("images/floral-right.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 .section-content {
     z-index: 10;
     display: flex;
+    align-items: flex-start;
     width: 100%;
     padding: 4vh;
 }
 
-.section-content-text {
-    margin-right: 4vh;
+.section-content h2 {
+    margin-top: 0;
+}
+
+.section-content-leading {
     flex-grow: 1;
+    padding-right: 12vh;
 }
 
 .section-content img {
-    height: 40vh;
+    object-fit: contain;
+    width: 50vh;
+}
+
+.img-top-double-pad {
+    margin-top: 8vh;
+}
+
+.img-top-half-pad {
+    margin-top: 2vh;
 }
 
 #countdown-timer {
@@ -160,6 +156,7 @@ body {
     font-size: 3vh;
     display: flex;
     width: 100%;
+    max-width: 800px;
 }
 
 #countdown-timer div {
@@ -187,12 +184,19 @@ p {
     font-size: 3vh;
 }
 
+table {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+table td {
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
 .osa-iframe {
     min-height: 1600px !important;
     min-width: 396px !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    margin-left: -2vh !important;
 }
 
 @media (max-width: 1000px) {
@@ -209,12 +213,15 @@ p {
         flex-wrap: wrap;
         padding: 2vh;
     }
+    .section-content-leading {
+        padding-right: 0;
+    }
     .section-content img {
         margin-top: 2vh;
         height: auto;
         width: 100%;
     }
-    .section-content-text {
+    .section-content-leading {
         margin-right: 0;
     }
     #countdown-timer {
@@ -239,6 +246,23 @@ p {
     }
     #countdown-timer-seconds {
         margin-right: 0 !important;
+    }
+    .osa-iframe {
+        margin-left: -3vh !important;
+    }
+    table {
+        font-size: 2.6vh;
+    }
+    table td {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .img-top-double-pad {
+        margin-top: 0;
+    }
+    
+    .img-top-half-pad {
+        margin-top: 0;
     }
 }
 
