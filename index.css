@@ -184,14 +184,18 @@ p {
     font-size: 3vh;
 }
 
+li {
+    font-size: 3vh;
+}
+
 table {
     font-size: 3vh;
     font-weight: bold;
 }
 
 table td {
-    padding-left: 3vh;
-    padding-right: 3vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .osa-iframe {
@@ -251,11 +255,11 @@ table td {
         margin-left: -3vh !important;
     }
     table {
-        font-size: 2.6vh;
+        font-size: 2.4vh;
     }
     table td {
-        padding-left: 2vh;
-        padding-right: 2vh;
+        padding-left: 20px;
+        padding-right: 0;
     }
     .img-top-double-pad {
         margin-top: 0;
